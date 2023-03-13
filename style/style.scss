@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+//colors
+$White: #FFFFFF;
+
+//mixins
+@mixin flexProperty ($horizontal,$vertical,$wrap, $direction) {
+    justify-content: $horizontal;
+    align-items: $vertical;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+}
+
+@mixin background ($Size, $repeat, $position) {
+    background-size: $bcSize;
+    background-repeat: $repeat;
+    background-position: $position;
+}
+@mixin absolute ($top, $right, $left) {
+    top: $top;
+    right: $right;
+    left: $left;
+}
+@mixin textStyle ($weight, $size, $height, $spacing, $transform, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $spacing;
+    text-transform: $transform;
+    color: $color;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Text', sans-serif;
+    font-style: normal;
+    height: 100vh;
+    background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
+    @include background (contain, no-repeat, center);
+    body {
+        height: 100vh;
+        width: 100vw;
+        // background: url(../images/pattern-hills.svg);
+        // @include background (contain, bottom, no-repeat);
+        // background-image: url(../images/bg-stars.svg);
+        // background-position: center;
+        // background-size: cover;
+        display: flex;
+        @include flexProperty(space-between, center, nowrap, column);
+        h1 {
+            margin: 0 2.4rem;
+            @include textStyle(700, 11.8rem, 22.4rem, 6.13636px, uppercase, $White);
+        }
+    }
+
+
+}
