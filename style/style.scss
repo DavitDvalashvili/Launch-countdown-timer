@@ -2,6 +2,10 @@
 
 //colors
 $White: #FFFFFF;
+$bcBrown: #343650;
+$bcDarkBrown: #191A23;
+$black: #000000;
+$red: #FB5E84;
 
 //mixins
 @mixin flexProperty ($horizontal,$vertical,$wrap, $direction) {
@@ -33,12 +37,12 @@ $White: #FFFFFF;
 
 html {
     font-size: 62.5%;
+    height: 100vh;
     font-family: 'Red Hat Text', sans-serif;
     font-style: normal;
-    height: 100vh;
     background: linear-gradient(180deg, #1D1E28 0.12%, #261C2D 94.84%, #261A2D 100%);
-    @include background (contain, no-repeat, center);
     body {
+        text-align: center;
         height: 100vh;
         width: 100vw;
         // background: url(../images/pattern-hills.svg);
@@ -49,8 +53,67 @@ html {
         display: flex;
         @include flexProperty(space-between, center, nowrap, column);
         h1 {
-            margin: 0 2.4rem;
-            @include textStyle(700, 11.8rem, 22.4rem, 6.13636px, uppercase, $White);
+            margin: 14.2rem 0rem 5.4rem 0rem;
+            @include textStyle(700, 1.8rem, 2.4rem, 0.613636rem, uppercase, $White);
+        }
+        .timer {
+            display: flex;
+            @include flexProperty(center, center, no-repeat, row);
+            gap: 1.6rem;
+            .flip-box-back {
+                width: 7rem;
+                height: 7.1rem;
+                border-radius: 0.8rem;
+                background-color: $bcDarkBrown;
+                margin-bottom: 0.9rem;
+                position: relative;
+                #flip-top {
+                    width: 7rem;
+                    height: 3.3rem;
+                    background-color: $bcBrown;
+                    border-radius: 0.4rem;
+                }
+                .divider {
+                    background-color: $black;
+                    width: 7rem;
+                    height: 0.05rem;
+                }
+                #flip-bottom {
+                    width: 7rem;
+                    height: 3.3rem;
+                    background-color: $bcBrown;
+                    border-radius: 0.4rem;
+                }
+                #right, #left {
+                    width: 0.3rem;
+                    height: 0.6rem;
+                    background-color: $bcDarkBrown;
+                    position: absolute;
+                    background-color: $bcDarkBrown;
+                }
+                #left {
+                    @include absolute(3rem, unset, 0);
+                    border-radius:  0 0.3rem 0.3rem 0;
+                }
+                #right {
+                    @include absolute(3rem, 0, unset);
+                    border-radius:  0.3rem 0 0 0.3rem;
+                }
+                .flip-box-front {
+                    position: absolute;
+                    @include absolute(0, 0, unset);
+                    width: 7rem;
+                    height: 6.327rem;
+                    border-radius: 0.4rem;
+                    @include textStyle(700, 3.6rem, 7.1rem,  0.18rem, uppercase, $red);
+                }
+            }
+            .time-interval {
+                @include textStyle(700, .7rem, 0.9rem,  0.295937rem, uppercase, #8385A9);
+            }
+        }
+        .social-medias {
+            
         }
     }
 
