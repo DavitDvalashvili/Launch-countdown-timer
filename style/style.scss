@@ -113,7 +113,7 @@ html {
                 }
             }
             .time-interval {
-                @include textStyle(700, .7rem, 0.9rem,  0.295937rem, uppercase, #8385A9);
+                @include textStyle(700, 0.7rem, 0.9rem,  0.295937rem, uppercase, #8385A9);
             }
         }
         .social-media {
@@ -133,4 +133,61 @@ html {
     }
 }
 
-
+@media (min-width: 1024px) {
+    html {
+        body {
+            h1 {
+                margin: 13.2rem 0 10.5rem 0;
+                @include textStyle(700, 2.2rem, 2.9rem, 0.75rem, uppercase, $White);
+            }
+            .timer {
+                gap: 3.2rem;
+                .flip-box-back {
+                    width: 14.8rem;
+                    height: 15.0rem;
+                    margin-bottom: 1.6rem;
+                    #flip-top {
+                        width: 14.8rem;
+                        height: 7rem;
+                        border-radius: 0.8rem;
+                    }
+                    .divider {
+                        @include absolute(7.15rem, unset, unset);
+                        width: 14.8rem;
+                        height: 0.1rem;
+                    }
+                    #flip-bottom {
+                        width: 14.8rem;
+                        height: 6.9rem;
+                        border-radius: 0.8rem;
+                    }
+                    #right, #left {
+                        width: 0.6rem;
+                        height: 1.2rem;
+                    }
+                    #left {
+                        @include absolute(6.6rem, unset, 0);
+                        border-radius:  0 0.6rem 0.6rem 0;
+                    }
+                    #right {
+                        @include absolute(6.6rem, 0, unset);
+                        border-radius:  0.6rem 0 0 0.6rem;
+                    }
+                    .flip-box-front {
+                        @include absolute(3.65rem, 0, unset);
+                        width: 14.8rem;
+                        height: 7rem;
+                        border-radius: 0.8rem;
+                        @include textStyle(700, 8rem, 7.1rem,  -0.24rem, uppercase, $red);
+                    }
+                }
+                .time-interval {
+                    @include textStyle(700, 1.4rem, 1.9rem,  0.591875rem, uppercase, #8385A9);
+                }
+            }
+            .social-media {
+                margin: 25.2rem 0 7.2rem 0;
+            }
+        }
+    }
+}

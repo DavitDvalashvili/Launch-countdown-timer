@@ -122,4 +122,82 @@ html body .social-media svg {
 html body .social-media svg:hover path {
   fill: #FB5E84;
   transition: all 0.5s linear;
+}
+
+@media (min-width: 1024px) {
+  html body h1 {
+    margin: 13.2rem 0 10.5rem 0;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.75rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  html body .timer {
+    gap: 3.2rem;
+  }
+  html body .timer .flip-box-back {
+    width: 14.8rem;
+    height: 15rem;
+    margin-bottom: 1.6rem;
+  }
+  html body .timer .flip-box-back #flip-top {
+    width: 14.8rem;
+    height: 7rem;
+    border-radius: 0.8rem;
+  }
+  html body .timer .flip-box-back .divider {
+    top: 7.15rem;
+    right: unset;
+    left: unset;
+    width: 14.8rem;
+    height: 0.1rem;
+  }
+  html body .timer .flip-box-back #flip-bottom {
+    width: 14.8rem;
+    height: 6.9rem;
+    border-radius: 0.8rem;
+  }
+  html body .timer .flip-box-back #right, html body .timer .flip-box-back #left {
+    width: 0.6rem;
+    height: 1.2rem;
+  }
+  html body .timer .flip-box-back #left {
+    top: 6.6rem;
+    right: unset;
+    left: 0;
+    border-radius: 0 0.6rem 0.6rem 0;
+  }
+  html body .timer .flip-box-back #right {
+    top: 6.6rem;
+    right: 0;
+    left: unset;
+    border-radius: 0.6rem 0 0 0.6rem;
+  }
+  html body .timer .flip-box-back .flip-box-front {
+    top: 3.65rem;
+    right: 0;
+    left: unset;
+    width: 14.8rem;
+    height: 7rem;
+    border-radius: 0.8rem;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 7.1rem;
+    letter-spacing: -0.24rem;
+    text-transform: uppercase;
+    color: #FB5E84;
+  }
+  html body .timer .time-interval {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.591875rem;
+    text-transform: uppercase;
+    color: #8385A9;
+  }
+  html body .social-media {
+    margin: 25.2rem 0 7.2rem 0;
+  }
 }/*# sourceMappingURL=style.css.map */
