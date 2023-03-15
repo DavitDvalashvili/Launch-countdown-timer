@@ -45,11 +45,11 @@ html {
         text-align: center;
         height: 100vh;
         width: 100vw;
-        // background: url(../images/pattern-hills.svg);
-        // @include background (contain, bottom, no-repeat);
-        // background-image: url(../images/bg-stars.svg);
-        // background-position: center;
-        // background-size: cover;
+        background: url(../images/pattern-hills.svg), url(../images/bg-stars.svg);
+        background-position: bottom, center;
+        background-size: 100% 16.8rem, cover;
+        background-repeat: no-repeat, no-repeat;
+        //@include background (contain, bottom, no-repeat);
         display: flex;
         @include flexProperty(space-between, center, nowrap, column);
         h1 {
@@ -74,9 +74,13 @@ html {
                     border-radius: 0.4rem;
                 }
                 .divider {
+                    position: absolute;
+                    @include absolute(3.276rem, unset, unset);
+                    z-index: 5;
                     background-color: $black;
                     width: 7rem;
-                    height: 0.05rem;
+                    height: 0.047rem;
+                    opacity: 0.25;
                 }
                 #flip-bottom {
                     width: 7rem;
@@ -101,21 +105,32 @@ html {
                 }
                 .flip-box-front {
                     position: absolute;
-                    @include absolute(0, 0, unset);
+                    @include absolute(-0.156rem, 0, unset);
                     width: 7rem;
                     height: 6.327rem;
                     border-radius: 0.4rem;
-                    @include textStyle(700, 3.6rem, 7.1rem,  0.18rem, uppercase, $red);
+                    @include textStyle(700, 3.6rem, 7.1rem,  -0.108rem, uppercase, $red);
                 }
             }
             .time-interval {
                 @include textStyle(700, .7rem, 0.9rem,  0.295937rem, uppercase, #8385A9);
             }
         }
-        .social-medias {
-            
+        .social-media {
+            margin: 25.9rem 0 4.8rem 0;
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+                margin: 0 1.6rem;
+                cursor: pointer;
+            }
+            svg:hover path {
+                fill: $red;
+                transition:  all 0.5s linear;
+            }
         }
+
     }
-
-
 }
+
+
