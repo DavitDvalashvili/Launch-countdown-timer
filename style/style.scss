@@ -67,7 +67,7 @@ html {
                 background-color: $bcDarkBrown;
                 margin-bottom: 0.9rem;
                 position: relative;
-                #flip-top {
+                .flip-top {
                     width: 7rem;
                     height: 3.3rem;
                     background-color: $bcBrown;
@@ -82,7 +82,7 @@ html {
                     height: 0.047rem;
                     opacity: 0.25;
                 }
-                #flip-bottom {
+                .flip-bottom {
                     width: 7rem;
                     height: 3.3rem;
                     background-color: $bcBrown;
@@ -146,7 +146,7 @@ html {
                     width: 14.8rem;
                     height: 15.0rem;
                     margin-bottom: 1.6rem;
-                    #flip-top {
+                    .flip-top {
                         width: 14.8rem;
                         height: 7rem;
                         border-radius: 0.8rem;
@@ -156,7 +156,7 @@ html {
                         width: 14.8rem;
                         height: 0.1rem;
                     }
-                    #flip-bottom {
+                    .flip-bottom {
                         width: 14.8rem;
                         height: 6.9rem;
                         border-radius: 0.8rem;

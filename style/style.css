@@ -45,7 +45,7 @@ html body .timer .flip-box-back {
   margin-bottom: 0.9rem;
   position: relative;
 }
-html body .timer .flip-box-back #flip-top {
+html body .timer .flip-box-back .flip-top {
   width: 7rem;
   height: 3.3rem;
   background-color: #343650;
@@ -62,7 +62,7 @@ html body .timer .flip-box-back .divider {
   height: 0.047rem;
   opacity: 0.25;
 }
-html body .timer .flip-box-back #flip-bottom {
+html body .timer .flip-box-back .flip-bottom {
   width: 7rem;
   height: 3.3rem;
   background-color: #343650;
@@ -142,7 +142,7 @@ html body .social-media svg:hover path {
     height: 15rem;
     margin-bottom: 1.6rem;
   }
-  html body .timer .flip-box-back #flip-top {
+  html body .timer .flip-box-back .flip-top {
     width: 14.8rem;
     height: 7rem;
     border-radius: 0.8rem;
@@ -154,7 +154,7 @@ html body .social-media svg:hover path {
     width: 14.8rem;
     height: 0.1rem;
   }
-  html body .timer .flip-box-back #flip-bottom {
+  html body .timer .flip-box-back .flip-bottom {
     width: 14.8rem;
     height: 6.9rem;
     border-radius: 0.8rem;
