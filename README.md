@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive-card-details-form
+# Frontend Mentor - Launch-countdown-timer
 
-This is a solution to the [Interactive-card-details-form]
+This is a solution to the [Launch-countdown-timer]
 
 ## Table of contents
   - [Interaction](#interaction)
